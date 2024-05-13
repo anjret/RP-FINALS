@@ -1,0 +1,180 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #EFF4FA;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: auto;
+}
+
+.navigation {
+  background-color: #af2016;    
+}
+
+
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  justify-content: end;
+}
+
+.navigation ul li {
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-family: "quattrocento sans", sans-serif;
+
+  & a {
+      text-decoration: none;
+      color: white;
+  }
+}
+
+.navigation ul li a:hover {
+  background-color: #af2016;
+  color: #e9b9b6;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #004EA8;
+}
+
+.header img {
+  height: auto;
+  width: 90px;
+}
+
+.header p {
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+.description {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+    & .description-text {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      background-color: #004EA8;
+      font-weight: lighter;
+      color: white;
+      width: 50%;
+      text-align: justify;
+      padding: 50px;
+
+      & .description-text-title {
+        font-size: 40px;
+        font-weight: normal;
+      }
+    }
+
+    & .description-image {
+        width: 50%;
+      & img {
+        display: flex;
+        height: auto;
+        width: 100%;
+      }
+
+    }
+}
+
+.offer {
+  display: flex;
+  justify-content: center;
+
+  & .offer-title-course {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 15%;
+    padding-right: 30px;
+
+    & .offer-title {
+      font-size: 25px;
+      font-weight: bold;
+      color: #064EA8;
+    }
+
+    & .offer-course {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & .offer-course a {
+      text-decoration: none;
+    }
+
+    & .offer-course a button {
+      text-align: left;
+      font-size: 15px;
+      padding: 20px;
+      border-style: none;
+      background-color: #EFF4FA;
+      position: relative;
+    }
+
+    & .offer-course a button:hover {
+      background-color: #ebe9e9;
+    }
+
+    & .offer-course a.active button::before {
+      content: '';
+      background-color: #064EA8;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 100%;
+    }
+  }
+
+  & .offer-description {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    padding: 50px;
+
+    & .offer-bscs-description {
+      color: #064EA8;
+      font-size: 30px;
+    }
+
+    & .bscs-description {
+      text-align: justify;
+    }
+  }
+}
+
+.bscs-career-opportunity {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+
+  & .career-opportunity-column {
+    display: flex;
+  }
+
+  & .first-column {
+    padding-right: 50px;
+  }
+}
